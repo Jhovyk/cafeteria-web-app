@@ -4,50 +4,133 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cafeteria Doce Sabor</title>
-    <!-- Link para o CSS do Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        /* Estilos adicionais para personalização */
+        /* Cores principais da cafeteria */
         body {
-            background-color: #f5f5f5;
-            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5; /* Cor de fundo suave */
+            color: #4e4e4e; /* Cor do texto */
+            font-family: Arial, sans-serif;
         }
+
+        /* Cabeçalho */
         .header {
+            background-color: #6f4f1f; /* Cor marrom do café */
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+            border-bottom: 5px solid #8B5E3C; /* Linha de borda que complementa o tema */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adicionando sombra suave */
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            letter-spacing: 2px;
+        }
+
+        /* Seção de descrição */
+        .section-description {
+            margin-top: 30px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .section-description h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #6f4f1f;
+        }
+
+        .section-description p {
+            font-size: 1.1rem;
+            color: #6f4f1f;
+            max-width: 800px;
+            margin: 20px auto;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        .img-fluid {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease; /* Efeito de transição suave na imagem */
+        }
+
+        .img-fluid:hover {
+            transform: scale(1.05); /* Aumenta a imagem suavemente ao passar o mouse */
+        }
+
+        /* Botão personalizado */
+        .btn-custom {
             background-color: #6f4f1f;
             color: white;
-            text-align: center;
-            padding: 50px;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            border-radius: 30px;
+            text-transform: uppercase;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, transform 0.3s ease;
         }
-        .description {
-            margin: 30px auto;
-            max-width: 900px;
-            text-align: center;
+
+        .btn-custom:hover {
+            background-color: #8B5E3C; /* Cor mais clara para o hover */
+            transform: translateY(-5px); /* Levanta o botão ao passar o mouse */
         }
+
+        /* Rodapé */
+        .footer {
+            background-color: #6f4f1f;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+
+        /* Responsividade */
         @media (max-width: 768px) {
-            .description {
+            .section-description h2 {
+                font-size: 2rem;
+            }
+
+            .section-description p {
                 font-size: 1rem;
+            }
+
+            .header h1 {
+                font-size: 2rem;
             }
         }
     </style>
 </head>
 <body>
 
+    <!-- Cabeçalho -->
     <header class="header">
         <h1>Cafeteria Doce Sabor</h1>
         <p>O melhor café da cidade, feito com amor!</p>
     </header>
 
-    <section class="description">
-        <h2>Sobre Nós</h2>
-        <p>Na Cafeteria Doce Sabor, oferecemos uma experiência única de café, preparada com grãos selecionados e um ambiente aconchegante para você relaxar ou trabalhar.</p>
-        <img src="https://via.placeholder.com/800x400.png?text=Imagem+Cafeteria" alt="Imagem Cafeteria" class="img-fluid">
+    <!-- Seção de descrição -->
+    <section class="section-description">
+        <h2>Bem-vindo à nossa cafeteria!</h2>
+        <p>Em nosso espaço acolhedor, oferecemos uma experiência única para quem ama café. Com grãos selecionados, preparos exclusivos e um ambiente que traz aconchego, nossa cafeteria é o lugar perfeito para quem busca qualidade e sabor.</p>
+        <!-- Imagem representativa da cafeteria -->
+        <img src="https://via.placeholder.com/800x400.png?text=Imagem+Cafeteria" alt="Imagem ilustrativa da Cafeteria Doce Sabor" class="img-fluid">
     </section>
 
-    <div class="text-center">
-        <a href="#" class="btn btn-primary">Fazer Pedido</a>
+    <!-- Botão de Ação -->
+    <div class="text-center mt-4">
+        <a href="#" class="btn btn-custom" aria-label="Fazer pedido na cafeteria">Fazer Pedido</a>
     </div>
 
-    <footer class="text-center">
+    <!-- Rodapé -->
+    <footer class="footer">
         <p>&copy; 2025 Cafeteria Doce Sabor. Todos os direitos reservados.</p>
     </footer>
 
