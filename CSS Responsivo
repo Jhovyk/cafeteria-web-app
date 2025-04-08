@@ -1,0 +1,33 @@
+/* Estilos gerais */
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+/* Media Query para dispositivos menores */
+@media (max-width: 768px) {
+  header {
+    text-align: center;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  nav ul li {
+    margin: 0 10px;
+  }
+}
+
+/* Media Query para dispositivos grandes */
+@media (min-width: 769px) {
+  header {
+    text-align: left;
+  }
+}
